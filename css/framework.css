@@ -1,0 +1,32 @@
+.btn-shape {
+    display: block;
+    background-color: var(--yellow-color);
+    padding: 10px 20px;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn-shape:hover {
+    background-color: #e7cc00;
+}
+.heading-text {
+    font-size: 59px;
+    color: var(--text-color);
+    font-weight: 800;
+}
+.p-style {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.9;
+    display: block;
+}
+@media (max-width: 767px) {
+    .center-mobile {
+        text-align: center;
+    }
+    .heading-text {
+        font-size: 45px !important;
+    }
+}
