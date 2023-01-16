@@ -32,14 +32,6 @@ textarea {
 img {
     max-width: 100%;
 }
-@media (min-width: 768px) {
-    .only-mobile {
-        display: none !important;
-    }
-    .block-wide {
-        display: block;
-    }
-}
 @media (min-width: 992px) { 
     .container {
         padding: 0 150px;
@@ -53,12 +45,6 @@ img {
 @media (max-width: 767px) {
     .container {
         padding: 0 25px;
-    }
-    .hide-mobile {
-    display: none;
-    }
-    .inline-mobile {
-        display: inline-block;
     }
 }
 /* End Global Values */
@@ -336,12 +322,17 @@ section.about {
 }
 @media (max-width: 767px) {
     .our-blog .container .blogs {
-        gap: 5px ;
+        gap: 10px ;
     }
 }
 .our-blog .container .blog {
     background-color: white;
     position: relative;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.144);
+    transition: var(--transition-duration);
+}
+.our-blog .container .blog:hover {
+    transform: scale(1.04);
 }
 .our-blog .container .blog img {
     height: 50%;
@@ -457,7 +448,20 @@ section.about {
     gap: 50px;
     margin-top: 50px;
 }
-
+.contact .social .facebook,
+.contact .social .twitter,
+.contact .social .linkedin {
+    transition: var(--transition-duration);
+}
+.contact .social .facebook:hover {
+    color: #1877f2;
+}
+.contact .social .twitter:hover {
+    color: #1da1f2;
+}
+.contact .social .linkedin:hover {
+    color: #0a66c2;
+}
 .contact .social i {
     font-size: 25px;
 }
