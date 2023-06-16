@@ -314,6 +314,7 @@ section.about {
 }
 .our-blog .container > p {
     margin-bottom: 25px;
+    text-align: center;
 }
 .our-blog .container .blogs {
     display: grid;
